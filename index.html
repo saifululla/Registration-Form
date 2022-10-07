@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Bootstrap 3 Contact form with Validation</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+
+    <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+<!-- <fieldset> -->
+
+<!-- Form Name -->
+<legend> <h3> Registration Form </h3></legend>
+
+<!-- Text input-->
+
+<div class="form-group">
+ 
+  <div class="col-md-4 inputGroupContainer">
+  <div class="input-group">
+ 
+  <input  name="full_name" placeholder="Full Name" class="form-control"  type="text">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Text input Email-->
+       <div class="form-group">
+ 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        
+  <input name="email" placeholder="Email" class="form-control"  type="email">
+    </div>
+  </div>
+</div>
+
+  <!-- Select Batch -->
+<div class="form-group"> 
+  
+    <div class="col-md-4 selectContainer">
+    <div class="input-group">
+       
+    <select name="batch" class="form-control selectpicker" >
+      <option value=" " >--Select Batch --</option>
+     
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+      <option value="13">13</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17">17</option>
+      <option value="18">18</option>
+      <option value="19">19</option>
+      <option value="20">20</option>
+    
+    </select>
+  </div>
+</div>
+</div>
+<!-- 
+select Country -->
+<div class="form-group"> 
+    <div class="col-md-4 selectContainer">    
+    <div class="input-group">
+    <select  name="country" id="country_form" class=" form-control selectpicker" >
+      <option > --Select Country-- </option>
+      <option value="bangladesh">Bangladesh</option>
+      <option>Afghanistan</option>
+      <option >Albania</option>
+      <option >Algeria</option>
+      <option >Andorra</option>
+      <option >Angola</option>
+      <option >Antigua & Deps</option>
+      <option >Argentina</option>
+      <option >Armenia</option>
+      <option> Australia</option>
+      <option >Austria</option>
+      <option >Azerbaijan</option>
+      <option >Bahamas</option>
+      <option >Bahrain</option>
+      <option >Barbados</option>
+      <option >Belarus</option>
+      <option> Belgium</option>
+      <option >Belize</option>
+      <option >Benin</option>
+      <option>Bhutan</option>
+      <option >Bolivia</option>
+      <option> Bosnia Herzegovina</option>
+      <option >Botswana</option>
+      <option >Brazil</option>
+      <option>Brunei</option>
+      <option>Bulgaria</option>
+      <option>Burkina</option>
+      <option>Burundi</option>
+      <option>Cambodia</option>
+      <option>Cameroon</option>
+      <option>Canada</option>
+      <option>Cape Verde</option>
+      <option>Central African Rep</option>
+      <option>Chad</option>
+      <option>Chile</option>
+      <option>China</option>
+      <option> Colombia </option>
+      <option>Comoros  </option>
+      <option> Congo </option>
+      <option>Congo {Democratic Rep}  </option>
+      <option> Costa Rica </option>
+      <option>Croatia  </option>
+      <option>Cuba  </option>
+      <option> Cyprus </option>
+      <option> Czech Republic </option>
+      <option> Denmark </option>
+      <option> Djibouti </option>
+      <option>Dominica  </option>
+      <option> Dominican Republic </option>
+      <option>East Timor  </option>
+      <option> Ecuador </option>
+      <option> Egypt </option>
+      <option> El Salvador </option>
+      <option>Equatorial Guinea  </option>
+      <option>Eritrea  </option>
+      <option> Estonia </option>
+      <option> Ethiopia  </option>
+      <option> Fiji  </option>
+      <option> Finland  </option>
+      <option>  France </option>
+      <option> Gabon  </option>
+      <option> Gambia  </option>
+      <option>Georgia   </option>
+      <option> Germany  </option>
+      <option> Ghana  </option>
+      <option> Greece  </option>
+      <option>Grenada   </option>
+      <option> Guatemala  </option>
+      <option> Guinea  </option>
+      <option> Guinea-Bissau  </option>
+      <option> Guyana  </option>
+      <option> Haiti  </option>
+      <option> Honduras  </option>
+      <option> Hungary  </option>
+      <option>Iceland</option>
+      <option>India</option>
+      <option>Indonesia</option>
+      <option>Iran</option>
+      <option>Iraq</option>
+      <option>Ireland {Republic}</option>
+      <option>Israel</option>
+      <option>Italy</option>
+      <option>Ivory Coast</option>
+      <option>Jamaica</option>
+      <option>Japan</option>
+      <option>Jordan</option>
+      <option>Kazakhstan</option>
+      <option>Kenya</option>
+      <option>Kiribati</option>
+      <option>Korea North</option>
+      <option>Korea South</option>
+      <option>Kosovo</option>
+      <option>Kuwait</option>
+      <option>Kyrgyzstan</option>
+      <option>Laos</option>
+      <option>Latvia</option>
+      <option>Lebanon</option>
+      <option>Lesotho</option>
+      <option>Liberia</option>
+      <option>Libya</option>
+      <option>Liechtenstein</option>
+      <option>Lithuania</option>
+      <option>Luxembourg</option>
+      <option>Macedonia</option>
+      <option>Madagascar</option>
+      <option>Malawi</option>
+      <option>Malaysia</option>
+      <option>Maldives</option>
+      <option>Mali</option>
+      <option>Malta</option>
+      <option>Marshall Islands</option>
+      <option>Mauritania</option>
+      <option>Mauritius</option>
+      <option>Mexico</option>
+      <option>Micronesia</option>
+      <option>Moldova</option>
+      <option>Monaco</option>
+      <option>Mongolia</option>
+      <option>Montenegro</option>
+      <option>Morocco</option>
+      <option>Mozambique</option>
+      <option>Myanmar, {Burma}</option>
+      <option>Namibia</option>
+      <option>Nauru</option>
+      <option>Nepal</option>
+      <option>Netherlands</option>
+      <option>New Zealand</option>
+      <option>Nicaragua</option>
+      <option>Niger</option>
+      <option>Nigeria</option>
+      <option>Norway</option>
+      <option>Oman</option>
+      <option>Pakistan</option>
+      <option>Palau</option>
+      <option>Panama</option>
+      <option>Papua New Guinea</option>
+      <option>Paraguay</option>
+      <option>Peru</option>
+      <option>Philippines</option>
+      <option>Poland</option>
+      <option>Portugal</option>
+      <option>Qatar</option>
+      <option>Romania</option>
+      <option>Russian Federation</option>
+      <option>Rwanda</option>
+      <option>St Kitts & Nevis</option>
+      <option>St Lucia</option>
+      <option>Saint Vincent & the Grenadines</option>
+      <option>Samoa</option>
+      <option>San Marino</option>
+      <option>Sao Tome & Principe</option>
+      <option>Saudi Arabia</option>
+      <option>Senegal</option>
+      <option>Serbia</option>
+      <option>Seychelles</option>
+      <option>Sierra Leone</option>
+      <option>Singapore</option>
+      <option>Slovakia</option>
+      <option>Slovenia</option>
+      <option>Solomon Islands</option>
+      <option>Somalia</option>
+      <option>South Africa</option>
+      <option>South <option>Sudan</option>
+      <option>Spain</option>
+      <option>Sri Lanka</option>
+      <option>Sudan</option>
+      <option>Suriname</option>
+      <option>Swaziland</option>
+      <option>Sweden</option>
+      <option>Switzerland</option>
+      <option>Syria</option>
+      <option>Taiwan</option>
+      <option>Tajikistan</option>
+      <option>Tanzania</option>
+      <option>Thailand</option>
+      <option>Togo</option>
+      <option>Tonga</option>
+      <option>Trinidad & Tobago</option>
+      <option>Tunisia</option>
+      <option>Turkey</option>
+      <option>Turkmenistan</option>
+      <option>Tuvalu</option>
+      <option>Uganda</option>
+      <option>Ukraine</option>
+      <option>United Arab Emirates</option>
+      <option>United Kingdom</option>
+      <option>United States</option>
+      <option>Uruguay</option>
+      <option>Uzbekistan</option>
+      <option>Vanuatu</option>
+      <option>Vatican City</option>
+      <option>Venezuela</option>
+      <option>Vietnam</option>
+      <option>Yemen</option>
+      <option>Zambia</option>
+      <option>Zimbabwe</option>
+
+    </select>
+   
+
+  </div>
+</div>
+</div>
+
+<div class="form-group"> 
+  <div class="col-md-4 selectContainer">
+  <div  class="input-group  bangladesh details">
+
+  <select  name="division"  id="select1" selected="selected"  class=" form-cl form-control selectpicker"  > <!--- onchange = "populate(this.id ,'select2')"  value disable="true" -->
+    <option value="">... Select Division ...</option>
+    <!-- <option value="Barisal">Barisal</option>
+    <option value="Chittagong">Chittagong</option>
+    <option value="Dhaka">Dhaka</option>
+    <option value="Khulna">Khulna</option>
+    <option value="Mymensingh">Mymensingh</option>
+    <option value="Rajshahi">Rajshahi</option>
+    <option value="Rangpur">Rangpur</option>
+    <option value="Sylhet">Sylhet</option> -->
+  </select>
+</div>
+
+
+   <div class="input-group bangladesh details">
+  <select  name="district"  id="select2" selected="selected"   class=" form-cl form-control selectpicker" >
+ 
+    <option value="">... Select District ➟   ...</option>
+    <!-- <option value="Comilla">Comilla</option>
+    <option value="Feni">Feni</option>
+    <option value="Brahmanbaria">Brahmanbaria</option>
+    <option value="Rangamati">Rangamati</option>
+    <option value="Noakhali">Noakhali</option>
+    <option value="Chandpur">Chandpur</option>
+    <option value="Lakshmipur">Lakshmipur</option>
+    <option value="Chattogram">Chattogram</option>
+    <option value="Coxsbazar">Coxsbazar</option>
+    <option value="Khagrachhari">Khagrachhari</option>
+    <option value="Bandarban">Bandarban</option> -->
+  </select>
+ </div>
+
+
+
+
+
+   <div class="input-group bangladesh details">
+  <select  name="thana"  id="select3" selected="selected"  class="  form-cl form-control selectpicker" >  
+  
+    <option value="">... Select Thana ➟   ...</option>
+    <!-- <option value="Rangunia">Rangunia</option>
+    <option value="Sitakunda">Sitakunda</option>
+    <option value="Mirsharai">Mirsharai</option>
+    <option value="Patiya">Patiya</option>
+    <option value="Sandwip">Sandwip</option>
+    <option value="Banshkhali">Banshkhali</option>
+    <option value="Boalkhali">Boalkhali</option>
+    <option value="Anwara">Anwara</option>
+    <option value="Satkania">Satkania</option>
+    <option value="Satkania">Satkania</option>
+    <option value="Hathazari">Hathazari</option>
+    <option value="Monohargonj">Monohargonj</option>
+    <option value="Fatikchhari">Fatikchhari</option>
+    <option value="Titas">Titas</option>
+    <option value="Raozan">Raozan</option>
+    <option value="Karnafuli">Karnafuli</option> -->
+  </select>
+</div>
+</div>
+</div>
+
+
+
+<!-- Text input *** Address **-->
+      
+<div class="form-group">
+ 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+       
+  <input name="address" placeholder="Street Address:e.g:house#25,road#10" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+
+<!-- Text input **Phone **-->
+       
+<div class="form-group">
+ 
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+        
+  <input name="phone" placeholder="Phone Number" class="form-control" type="text">
+    </div>
+  </div>
+</div>
+
+<!-- 
+select Country -->
+<div class="form-group"> 
+  
+    <div class="col-md-4 selectContainer">
+       <div class="input-group">  
+          <select name="occupation" class="form-control selectpicker" >
+            <option value=" " > ...Select Occupation... </option>
+            <option value="Student"> Student  </option>
+            <option value="Business"> Business </option>
+            <option value="Private Job"> Private Job </option>
+            <option value="Gov Job">Gov Job  </option>
+            <option value="No Job"> No Job  </option>
+          </select>
+      </div>
+  </div>
+</div>
+
+
+<!-- Text input-->
+ 
+<div class="form-group">
+    <div class="col-md-4 inputGroupContainer">
+       <div class="input-group">
+         <input name="facebook" placeholder="Facebook Profie Link" class="form-control"  type="url">
+     </div>
+  </div>
+</div>
+
+<!-- Password input -->
+
+<div class="form-group">
+  
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+       
+  <input id="password" name="password" placeholder="Password" class="form-control"  type="password" aria-autocomplete="list">
+    </div>
+    <!-- <div id="error"></div> -->
+  </div>
+</div>
+
+  <!-- Confirm Password input -->
+
+<div class="form-group">
+
+    <div class="col-md-4 inputGroupContainer">
+    <div class="input-group">
+  <input  id="confirm_pass" name="confirm_pass" placeholder="Confirm Password" class="form-control"  type="password">
+    </div>
+    <div id="error"></div>
+  </div>
+</div>
+
+
+  
+
+
+<!-- Success message -->
+<div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label"></label>
+  <div class="col-md-4">
+    <button type="submit" class="btn1 btn btn-primary" >Registration Form!
+     
+    </button>
+    <br><br>
+    <span>
+      Already a registered user ?
+      <a class="login_text" href="#">Login</a>
+    </span>
+  </div>
+</div>
+
+<!-- </fieldset> -->
+</form>
+</div>
+    </div><!-- /.container -->
+<!-- partial -->
+<script>
+//     function populates(s2,s3){
+     
+//       var s2 = document.getElementById(s2);
+//       var s3 = document.getElementById(s3);
+//     s2.innerHTML = "";
+//     s3.innerHTML = "";
+//   if(s2.value == "Feni"){
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Brahmanbaria")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Rangamati")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Noakhali")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Chandpur")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Lakshmipur")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Chattogram")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Coxsbazar")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Khagrachhari")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//   else if( s2.value == "Bandarban")
+//   {
+//     var Array = ['optionselect| <option value="">... Select Thana ➟   ...</option>' ,'Rangunia | Rangunia','Sitakunda | Sitakunda','Mirsharai | Mirsharai','Patiya | Patiya','Sandwip | Sandwip','Banshkhali | Banshkhali','Boalkhali | Boalkhali','Anwara | Anwara','Satkania | Satkania','Satkania | Satkania','Hathazari | Hathazari','Monohargonj | Monohargonj','Fatikchhari | Fatikchhari','Titas | Titas','Raozan | Raozan','Karnafuli | Karnafuli'];
+//   }
+//     for(var option in Array)
+//     {
+//       var pair = Array[option].split('|');
+//       var newoptions = document.createElement("option");
+//       newoptions.value = pair[0];
+//       newoptions.innerHTML=pair[1];
+     
+//       s3.options.add(newoptions);
+     
+//     }
+// }
+</script>
+<script>
+  document.querySelector('.btn1').onclick = function(){
+    var password = document.querySelector("#password"). value,
+    confirmPassword = document.querySelector('#confirm_pass').value;
+    if(password == ""){
+    
+    }else if( password != confirmPassword){
+      $("#error").html('The password confirmation does not match.');
+            $("#error").css('color' ,'red');
+          return false;
+    }else if(password == confirmPassword){
+      $("#error").html('');
+          
+          return true;
+    }
+    return true;
+  }
+</script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+<script  src="./script.js"></script>
+<script  src="./custom.js"></script>
+<script  src="./main.js"></script>
+
+</body>
+</html>
